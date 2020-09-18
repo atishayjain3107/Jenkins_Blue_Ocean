@@ -8,10 +8,10 @@ pipeline{
       }
       stage('Test'){
           steps{
-          echo 'mvn clean'
+          echo 'mvn Test'
           }
-          
-          stage('Clean'){
+      }
+       stage('Clean'){
           steps{
           echo 'Clean Stage'
           }
